@@ -1,0 +1,16 @@
+id: automotive-fintech
+version: 0.1.0
+description: "Spécialistes pour les logiciels transactionnels et actuariels de la distribution et du financement automobile."
+required_lenses:
+  - thiel
+  - gurley
+  - taleb
+agents:
+  - concession-buyer
+  - captive-risk-manager
+  - actuary
+  - dms-competitor
+  - regulatory-reviewer
+  - b2b-sales-operator
+source_policy: project-defined
+numeric_policy: "Aucun chiffre ne peut être créé par un agent ; les nombres viennent des sources autorisées du projet."
