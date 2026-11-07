@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://business-model-council.local/schemas/claim.json",
+  "type": "object",
+  "required": ["claim_id", "type", "statement", "confidence"],
+  "properties": {
+    "claim_id": { "type": "string", "pattern": "^[A-Z0-9-]+$" },
+    "type": { "enum": ["fact", "assumption", "inference", "recommendation", "risk"] },
+    "statement": { "type": "string", "minLength": 10 },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "evidence_gap": { "type": "string" },
+    "confidence": { "enum": ["high", "medium", "low"] },
+    "falsifier": { "type": "string" },
+    "impact": { "enum": ["low", "medium", "high", "critical"] },
+    "urgency": { "enum": ["now", "next", "later"] }
+  },
+  "additionalProperties": false
+}
