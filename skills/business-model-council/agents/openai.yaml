@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business Model Council"
+  short_description: "Challenge un business model avec plusieurs angles indépendants"
+  default_prompt: "Analyse ce business model avec les lentilles stratégiques et les spécialistes métier configurés, puis propose les expériences et pivots les plus décisifs."
