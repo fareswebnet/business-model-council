@@ -1,0 +1,20 @@
+id: generic-project
+display_name: "Project adapter example"
+pack: automotive-fintech
+language: fr
+source_policy:
+  canonical_data: "path/to/canonical-data.json"
+  generated_types: "path/to/generated-types.ts"
+  source_of_truth: "project-defined source of truth"
+  prohibited: ["hardcoded-financial-figures", "manual-shadow-data-files", "private-source-claims"]
+review_modes:
+  - investor-committee
+  - product-pivot
+  - customer-pilot
+  - financial-stress-test
+required_output:
+  - claim_register
+  - disagreement_map
+  - experiment_backlog
+  - pivot_options
+  - numeric_provenance
